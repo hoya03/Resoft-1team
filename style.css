@@ -409,6 +409,7 @@ color: white;
 #sec_proj {
   background-color: #f6f6f6;
   padding: 80px 0;
+  font-weight: 600;
 }
 
 .sec_proj_wrap {
@@ -443,6 +444,7 @@ color: white;
   width: 200px;
   height: 300px;
   z-index: 1;
+  color: #888;
 }
 
 .sec_proj_box {
@@ -479,6 +481,8 @@ color: white;
 
 .sec_proj_wrap_img img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   transition: transform 0.3s;
 }
 
