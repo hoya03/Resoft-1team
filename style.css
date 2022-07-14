@@ -551,11 +551,20 @@ color: white;
   height: 100%;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .text {
   text-align: end;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 2.8rem;
+  
 }
 
 .text p:last-child {
@@ -563,7 +572,57 @@ color: white;
   font-weight: normal;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1300px) {
+  .container {
+    height: max-content;
+    padding: 0.5rem;
+  }
+
+  .ecoce {
+    width: 35.2286rem;
+    height: 7.28055rem;
+  }
+
+  .phone {
+    transform: inherit;
+    width: 42.0244rem;
+    height: 75%;
+    
+  }
+
+  .basic {
+    width: 15.0117rem;
+    height: 21.3768rem;
+  }
+
+}
+
+@media screen and (max-width: 960px){
+  .ecoce {
+    width: 27.4844rem;
+    height: 7.8537rem;
+  }
+
+  .phone {
+    transform: inherit;
+    width: 25.0122rem;
+    height: 65%;
+    
+  }
+
+  .basic {
+    width: 13.0078rem;
+    height: 18.2512rem;
+  }
+
+  .text {
+    font-size: 2.0625rem;
+    line-height: 2.25rem;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
   .container {
     height: max-content;
     padding: 0.5rem;
@@ -575,7 +634,6 @@ color: white;
     align-items: center;
     gap: 2.5rem;
   }
-
   .ecoce {
     width: 23.4844rem;
     height: 4.8537rem;
@@ -791,6 +849,28 @@ button.move i {
   }
 }
 
+@media screen and (max-width: 500px){
+.clients-img-wrap ul li .img-wrap {
+  width: 22vw;
+  height: 22vw;
+}
+}
+
+@media screen and (max-width: 430px){
+  .box_wrap img{
+      margin: 53px 0;
+  }
+.box_wrap{
+      height: 320px;
+  }
+.clients-img-wrap ul li img {
+  padding: 12px;
+}
+.clients-img-wrap ul li p {
+  font-size: 14px;
+}
+}
+
 /* map_wrap-part */
 
 .indexKakaoMap{
@@ -816,12 +896,14 @@ button.move i {
   gap: 90px;
 }
 
+
 .map-wrap .map-info-wrap {
   display: flex;
   gap: 35px;
   flex-direction: column;
   font-size: 18px;
-  margin-top: 75px
+  margin-top: 75px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .map-wrap .map-info-wrap .map-info p:last-child {
@@ -840,7 +922,17 @@ button.move i {
 .map-wrap .map-info-wrap {
   width: 40%;
 }
+.indexKakaoMap {
+  height: 585px;
 }
+}
+
+@media screen and (max-width: 1217px){
+.indexKakaoMap {
+  height: 650px;
+}
+}
+
 
 @media screen and (max-width: 940px){
 .map-wrap {
