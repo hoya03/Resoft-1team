@@ -286,9 +286,15 @@ body {
 .card-section-list{
   list-style: none;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
+.card{
+  text-align: center;
+}
+
 
 .card .image-p > img{
   position: absolute;
@@ -296,6 +302,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 35px;
 }
 
 
@@ -327,6 +334,8 @@ color: #ee72d8;
 
 .card-back p{
 color: white;
+font-size: 20px;
+font-weight: 500;
 }
 
 .flip { 
@@ -356,6 +365,7 @@ color: white;
   backface-visibility: hidden;
   transform: rotateY(0deg);
 }
+
 
 /* 뒷면은 사전에 미리 뒤집기 */
 .card-back {
