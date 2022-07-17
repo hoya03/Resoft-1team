@@ -145,6 +145,16 @@ body {
     position: unset;
   }
 
+  .wrapper a {
+    top: 0px;
+  }
+
+  .wrapper a img {
+    width: auto;
+    height: 30px;
+    padding: 14px;
+  }
+
   .header {
     height: 1000px;
     background: url(./img/헤더배경940.png) no-repeat;
@@ -281,6 +291,11 @@ body {
 .card-section{
   padding: 200px 0;
   overflow: hidden;
+}
+
+.card-section-div{
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .card-section-list{
